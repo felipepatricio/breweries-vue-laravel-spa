@@ -98,16 +98,4 @@
     <table-breweries></table-breweries>
     <example-component></example-component>
     </body>
-    <script>
-        // fetch('/breweries')
-        //     .then(response => {
-        //         response.json()
-        //             .then(data => data.map(brewery => console.log(brewery)))
-        //     })
-
-        // fetch('/brewery/1')
-        //     .then(response => {
-        //         console.log(response.json())
-        //     })
-    </script>
 </html>

@@ -5,10 +5,11 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+// require('./bootstrap');
 import Vue from 'vue'
 import Vuesax from 'vuesax'
 
+import 'vuesax/dist/vuesax.css'
 import 'material-icons/iconfont/material-icons.css'
 
 Vue.use(Vuesax);
@@ -22,6 +23,7 @@ Vue.use(Vuesax);
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 Vue.component('table-breweries', require('./components/TableBreweries'));
+Vue.component('brewery-details', require('./components/BreweryDetails'));
 
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key)))

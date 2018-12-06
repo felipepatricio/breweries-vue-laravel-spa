@@ -8,8 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="app"></div>
-<example-component></example-component>
+    <div id="app">
+        <table-breweries></table-breweries>
+    </div>
 <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
