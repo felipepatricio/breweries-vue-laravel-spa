@@ -32,7 +32,6 @@ class BreweriesController extends Controller {
     public function getBreweryForId($id)
     {
         $brewery = $this->breweriesRepository->findForId($id);
-        dd($brewery);
 
         return $brewery;
     }

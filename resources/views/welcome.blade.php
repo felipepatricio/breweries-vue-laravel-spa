@@ -64,6 +64,7 @@
         </style>
     </head>
     <body>
+    <div id="app"></div>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -94,17 +95,19 @@
                 </div>
             </div>
         </div>
+    <table-breweries></table-breweries>
+    <example-component></example-component>
     </body>
     <script>
-        fetch('/breweries')
-            .then(response => {
-                response.json()
-                    .then(data => data.map(brewery => console.log(brewery)))
-            })
+        // fetch('/breweries')
+        //     .then(response => {
+        //         response.json()
+        //             .then(data => data.map(brewery => console.log(brewery)))
+        //     })
 
-        fetch('/brewery/1')
-            .then(response => {
-                console.log(response.json())
-            })
+        // fetch('/brewery/1')
+        //     .then(response => {
+        //         console.log(response.json())
+        //     })
     </script>
 </html>
